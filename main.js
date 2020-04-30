@@ -1,5 +1,4 @@
-{
-"name": "express-tutorial",
+{"name":"localserver",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -7,6 +6,6 @@
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
-    "author": "Kyrell Dixon",
+    "author": "nagraj",
     "license": "MIT"
   }
