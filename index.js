@@ -1,15 +1,12 @@
 //libraries
 const express = require("express");
-const pingdyno = require("pingmydyno");
 const logger = require("morgan");
-const nodemailer = require("nodemailer");
 const fs = require("fs");
 const path = require("path");
 
 // constants
 const brand = "MySelf";
 const port = process.env.PORT || 3000;
-const OTPS ={};
 
 //asignments
 const app = express();

@@ -16,7 +16,8 @@
     "morgan": "^1.10.0",
     "node-static": "^0.7.11",
     "pg": "^8.0.2",
-    "pingmydyno": "^1.5.1"
+    "pingmydyno": "^1.5.1",
+    "postgres": "^1.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
