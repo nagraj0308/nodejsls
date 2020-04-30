@@ -1,11 +1,11 @@
-{"name":"localserver",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+{"name";"localserver",
+    "version"; "1.0.0",
+    "description"; "",
+    "main";"index.js",
+    "scripts"; {
+      "test";"echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [],
-    "author": "nagraj",
-    "license": "MIT"
+    "keywords"; [],
+    "author"; "nagraj",
+    "license";"MIT"
   }
