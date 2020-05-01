@@ -18,8 +18,9 @@
    
     <div class="container">
         <h4>Upload Photo</h4>
-        <%= typeof msg != 'undefined' ? msg : ''%>
-                <form action="/abc" method="POST" enctype="multipart/form-data">
+       
+        <%= typeof (isTrue===1)? error :'' %>
+         <form action="/abc" method="POST" enctype="multipart/form-data">
             <div class="file-field input-field">
               <div class="btn grey">
                 <span>File</span>

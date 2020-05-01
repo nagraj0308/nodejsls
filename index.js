@@ -81,13 +81,11 @@ app.post("/api/login", (req, res) => {
 
 //upload api
 app.post("/abc",(req,res)=>{
-  console.log(req);
 upload(req,res,(err)=>{
     if(err){
-      res.render('index',{msg:err});
+      res.render('index',{"isTrue":0,error:"File not uploaded"});
     }else{
-      console.log(req.file);
-      res.send({ isTrue: 1, error: "" });
+     res.render('index',{"isTrue":1,error:""});
     }
   });
 
