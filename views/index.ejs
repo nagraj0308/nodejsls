@@ -18,7 +18,8 @@
    
     <div class="container">
         <h4>Upload Photo</h4>
-        <form action="/upload" method="POST">
+        <%= typeof msg != 'undefined' ? msg : ''%>
+                <form action="/abc" method="POST" enctype="multipart/form-data">
             <div class="file-field input-field">
               <div class="btn grey">
                 <span>File</span>
@@ -28,7 +29,7 @@
                 <input class="file-path validate" type="text">
               </div>
             </div>
-            <button type="button" class="btn">Submit</button>
+            <button type="submit" class="btn">Submit</button>
           </form>
     </div>
 

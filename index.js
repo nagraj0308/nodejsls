@@ -18,6 +18,17 @@ app.set('view engine','ejs');
 
 // app assignment
 app.use(express.json());
+app.disable('etag');
+
+//storage engine
+const storage = multer.diskStorage({
+  destination:'./data/',filename(req,file,cb){
+    cb(null,file.fieldname+'-'+Date.now()+path.extname(file.originalname));
+  }
+});
+//init Upload
+const upload = multer({storage : storage}).single('mydp');
+
 
 //port listening
 app.listen(port, function () {
@@ -68,7 +79,19 @@ app.post("/api/login", (req, res) => {
   
 });
 
+//upload api
+app.post("/abc",(req,res)=>{
+  console.log(req);
+upload(req,res,(err)=>{
+    if(err){
+      res.render('index',{msg:err});
+    }else{
+      console.log(req.file);
+      res.send({ isTrue: 1, error: "" });
+    }
+  });
 
+});
 
 ///beta apis
 app.get("/", (req, res) => {
