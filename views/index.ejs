@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=0.1" />
+    <meta http-equiv="X-UA-Compatiable" content="ie=edge,chrome=1">
+    <title>androidserver0308</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <h5>Welcome to NagRaj android server !!</h5>
+   
+    <div class="container">
+        <h4>Upload Photo</h4>
+        <form action="/upload" method="POST">
+            <div class="file-field input-field">
+              <div class="btn grey">
+                <span>File</span>
+                <input name="mydp" type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+            <button type="button" class="btn">Submit</button>
+          </form>
+    </div>
+
+</body>
+
+</html>
